@@ -1,0 +1,44 @@
+.pokemon-card
+    display: flex
+    flex-direction: column
+    font-family: "Signika", arial, sans-serif
+    margin: 0 5px 50px
+    width: 215px
+
+    &__image
+        background: #F2F2F2
+
+    &__number,
+    &__name
+        padding: 0 10px
+
+    &__number
+        color: #919191
+        font-size: 80%
+        padding-top: 2px
+
+    &__name
+        color: #313131
+        font-size: 145%
+        margin: 0.5em 0 5px
+
+    &__types
+        display: flex
+
+    &__type
+        margin: 0 10px
+        border-radius: 3px
+        line-height: 18px
+        max-width: 110px
+        width: 38.4375%
+        float: left
+        text-transform: none
+        font-size: 11px
+        text-align: center
+
+    &--grass
+        background-color: #9bcc50
+        color: 000
+    &--poison
+        background-color: #b97fc9
+        color: #fff
