@@ -1,3 +1,4 @@
+import { PokemonService } from './../../_services/pokemon.service';
 import { Component } from '@angular/core';
 import { Pokemon } from 'src/_model/Pokemon';
 import { Type } from 'src/_model/Type';
@@ -14,4 +15,10 @@ export class PokemonListComponent {
     name: "Bulbasaur",
     types: [Type.Grass, Type.Poison]
   }];
+
+  constructor(
+    public _pokemonService: PokemonService
+  ) {
+
+  }
 }
